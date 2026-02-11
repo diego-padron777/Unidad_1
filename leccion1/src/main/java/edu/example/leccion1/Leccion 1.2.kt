@@ -2,6 +2,8 @@ package edu.example.leccion1
 fun main(){
     step1()
     step2()
+    step3()
+    step4()
 }
 
 fun step1(){
@@ -40,7 +42,24 @@ fun step2() {
     val socialSecurityNumber = 999_99_9999L
     println(socialSecurityNumber)
     val hexBytes = 0xFF_EC_DE_5E
-    println(hexBytes)
+    println("%X".format(hexBytes))
     val bytes = 0b11010010_01101001_10010100_10010010
-    println(bytes)
+    println(bytes.toString(2))
+}
+
+fun step3(){
+    /*var fish = 1
+    fish = 2
+    val aquarium = 1
+    aquarium = 2  <-- Error, no se puede cambiar el valor de una variable tipo val  */
+
+    var fish: Int = 12
+    var lakes: Double = 2.5
+}
+
+fun step4(){
+    val numberOfFish = 5
+    val numberOfPlants = 12
+    println("I have $numberOfFish fish and $numberOfPlants plants")
+    println("I have ${numberOfFish + numberOfPlants} fish and plants")
 }
