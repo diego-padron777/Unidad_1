@@ -6,7 +6,7 @@ fun main(){
     step4()
 }
 
-fun step1(){
+private fun step1(){
     println(1+1)
     println(53-3)
     println(50/10)
@@ -21,7 +21,7 @@ fun step1(){
 
 }
 
-fun step2() {
+private fun step2() {
     val i: Int = 6
     val b1 = i.toByte()
     println(b1)
@@ -47,7 +47,7 @@ fun step2() {
     println(bytes.toString(2))
 }
 
-fun step3(){
+private fun step3(){
     /*var fish = 1
     fish = 2
     val aquarium = 1
@@ -57,7 +57,7 @@ fun step3(){
     var lakes: Double = 2.5
 }
 
-fun step4(){
+private fun step4(){
     val numberOfFish = 5
     val numberOfPlants = 12
     println("I have $numberOfFish fish and $numberOfPlants plants")
