@@ -31,7 +31,8 @@ fun main() {
     }
 
     // Null safety (operador Elvis ?:)
-    println("Email: ${email ?: "Email no registrado"}")
+    val emailMostrado = email ?: "Email no registrado"
+    println("Email: $emailMostrado")
 
     // Lista de usuarios
     val usuarios = mutableListOf<String>()
